@@ -9,7 +9,7 @@
 
 ### Enter the Access Token
 
-3. Enter the Access Token: 2606e883f4b5d3e40e4e3587c214cac0cc11462bffaddaa6b5cd4a7321208850
+3. Enter the Access Token:
    * **This token will be expired in th 15th July**
 
 ### Apply for a PYNQ Remote Device
