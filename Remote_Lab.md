@@ -14,7 +14,9 @@
 
 ### Apply for a PYNQ Remote Device
 
-4. Click the Board link to and copy the password to lanuch the Jupyter Notebook.
+4. Click the Board link to and copy the password to lanuch the Jupyter Notebook. This may takes 15 seconds, please wait patiently.
+
+   ![1720422664410](image/Remote_Lab/1720422664410.png)
 
 ### Note:
 
