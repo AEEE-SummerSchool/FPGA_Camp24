@@ -1,5 +1,3 @@
-
-
 ## Create and Run a Vitis Vision Library Example on Windows 10
 
 This blog will run through creating an HLS component that utilizes the Vitis Vision Library. This uses the Vitis Unified IDE. Most steps are the same if you are using Vitis Classic.
@@ -10,7 +8,7 @@ This was tested on:
 
 OS: Windows 10 (22H2)
 Version: Vitis 2023.2
-Device: VCK190 Evaluation Kit (xcvc1902-vsva2197-2MP-e-S)
+Device: xc7z020-clg484-1
 Required Install: OpenCV 4.4.0 (see [Install/Setup OpenCV on Windows 10](https://support.xilinx.com/s/article/000035890) for instructions)
 
 # Running a Vitis Vision Library Example with HLS
@@ -33,7 +31,7 @@ Required Install: OpenCV 4.4.0 (see [Install/Setup OpenCV on Windows 10](https:/
    11. Under the Test Bench section, browse to remap to add *xf_remap_tb.cpp*
        ![image.png](https://support.xilinx.com/servlet/rtaImage?eid=ka04U000000soC9&feoid=00N2E00000Ji4Tx&refid=0EM4U0000058gnM)
    12. Click Next
-   13. Select as the part - Versal AI Core Series (xcvc1502-nsvg1369-2HP-i-S)
+   13. Select as the part - xc7z020-clg484-1
    14. Click Next.
    15. Make sure your flow_target is set to "Vivado IP Flow Target" and the package.output.format is set to "Vivado IP and zip archive"
    16. Click Next to view the Summary and then click Finish.

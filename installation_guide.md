@@ -11,13 +11,13 @@
 5. Select Vivado and click next
    ![vivado_option](./image/installation_guide/vivado_option2.png)
 6. Select Vivado ML standard and click next
-7. Select the Vitis Embedded Development or Vitis Model Composer option based on your requirement and click next
+7. Make sure the Vitis Design Suite is selected and click next
    ![vivado_option](./image/installation_guide/vivado_option.png)
 8. Accept the license agreement and click next
 9. Select the install dictionary with enough disk space and click next
 10. Click install to finish the process of both downloading and installation
 
-## Vitis Tool
+## Vitis Tool (optional)
 
 1. Visit download page: [https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis.html]()
 2. Downlad the Windows Self extracting web installer

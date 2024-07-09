@@ -45,7 +45,7 @@ The advantages and disadvantages of the two methods are as follows:
     <td rowspan="3">3</td>
     <td rowspan="3"><a href="https://github.com/Xilinx/xup_High-Level-Synthesis-Design-Flow/blob/main/source/sobel/notebook/sobel_part3.ipynb">System-level Integration</a></td>
     <td>Create the kernel Graph and the test bench</td>
-    <td rowspan="3">Jupyter Notebook</td>
+    <td rowspan="3">Vivado Jupyter Notebook</td>
   </tr>
   <tr>
     <td>Load the overlay and run the application on the PYNQ framework</td>
@@ -64,7 +64,6 @@ The advantages and disadvantages of the two methods are as follows:
    * Ensure all dependencies and environment settings are configured correctly.
    * Follow the configuration steps to set up the library within your development environment.
    * Verify the installation by running [run_standalone.tcl](https://github.com/Xilinx/xup_High-Level-Synthesis-Design-Flow/blob/main/source/sobel/tutorial/run_standalone.tcl) file.
-
 2. **Deployment Steps** :
 
    * Follow the Sobel GUI flow [tutorial](https://github.com/Xilinx/xup_High-Level-Synthesis-Design-Flow/blob/main/source/sobel/tutorial/sobel_gui_flow.md) or the tcl file to generate the PYNQ overlay.
