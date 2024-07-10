@@ -1,8 +1,8 @@
-## Create and Run a Vitis Vision Library Example on Windows 10
+# Create and Run a Vitis Vision Library Example on Windows 10
 
 This blog will run through creating an HLS component that utilizes the Vitis Vision Library. This uses the Vitis Unified IDE. Most steps are the same if you are using Vitis Classic.
 
-**Note: **Our tools have extremely limited testing on Windows, and therefore are limited to specific documentation and support. It is strongly recommended to use Linux if the option is available.
+**Note: **Our tools have extremely limited testing on Windows, and therefore are limited to specific documentation and support. It is recommended to use Linux if the option is available.
 
 This was tested on:
 
@@ -11,7 +11,33 @@ Version: Vitis 2023.2
 Device: xc7z020-clg484-1
 Required Install: OpenCV 4.4.0 (see [Install/Setup OpenCV on Windows 10](https://support.xilinx.com/s/article/000035890) for instructions)
 
-# Running a Vitis Vision Library Example with HLS
+## Running a Vitis Vision Library Example with Vitis HLS
+
+### 1. Using Tcl Flow for Execution
+
+This Tutorial describes the process to create a HLS Tcl script with runs the sobel filter example in the L1 Vision directory in Windows.
+
+To utilize the examples designs, or reference the OpenCV libraries in a user testbench, the following steps must be taken:
+
+1. Install the OpenCV tools version 4.4.0
+2. Set up the environment variable to reference the OpenCV installation
+
+   1. OpenCV inclulde directory : C:/Data/OpenCV/build_win64/install/include
+   2. OpenCV library directory : C:/Data/OpenCV/build_win64/install/x64/mingw/lib
+   3. Vitis Vision Directory : C:/Data/Vitis_Libraries/Vitis_Libraries-master/vision/
+3. Create a Tcl script for Vitis HLS execution which references the OpenCV libraries
+
+To run the Vitis HLS script, perform the following actions:
+
+1) Place the  [run_hls_standalone.tcl](../prj/vision_lib/kernel/run_hls_standalone.tcl) script in the <Vitis_library_path>/vision/L1/example/sobelfilter directory.
+2) Open the Vitis HLS command line shell and navigate to the <itis_library_path>/vision/L1/example/sobelfilter directory
+3) Run the following command:
+
+vitis_hls -f run_hls_standalone.tcl
+
+---
+
+### 1. Using GUI Flow for Execution
 
 1. If you have not already done so, download the Vitis Libraries from the link below and extract them to any location.
    1. [https://github.com/Xilinx/Vitis_Libraries](https://github.com/Xilinx/Vitis_Libraries)
