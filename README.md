@@ -17,6 +17,10 @@ If you have a [PYNQ Supported Board](https://www.pynq.io/boards.html) at hand, p
 * Vivado 2023.1~2024.1
 * PYNQ v2.7,v3.0
 
+## Lab Steps
+
+[Project-Based Learning Material Lab](./pbl.md) Steps
+
 ## Agenda
 
 | DATE               | Time             | Subject                                                                          | Resource                                                                                               |
@@ -39,6 +43,16 @@ If you have a [PYNQ Supported Board](https://www.pynq.io/boards.html) at hand, p
 |                    | 2:00 PM-5:00 PM  | Comprehensive Analysis of the New Generation Products and Tools Updates          |                                                                                                        |
 |                    |                  | FPGA Competition Mobilization and Problem Statement Interpretation               |                                                                                                        |
 |                    |                  |                                                                                  |                                                                                                        |
+
+## Homework
+
+**Lab1 Basic Version:** Modify the visual library routines in Lab1. You can change the code to use input images of different sizes. The final assessment standard is based on updating the demonstration results in Jupyter notebook and HLS src code.
+
+**Lab1 Advanced Version:** Add the resize or cv2color operator and link it with the Sobel operator with any interface to achieve image processing.
+
+**Lab2 Basic Version:** Replace the adder function in the RTL IP core with any other algorithm. Use the AXI lite protocol as the interface, with the ILA waveform diagram and Jupyter notebook as the main evaluation criteria.
+
+**Lab2 Advanced Version:** Use the AXI bus or AXIS bus to achieve functional verification of any RTL IP under the PYNQ framework.
 
 ## Additional Material
 
