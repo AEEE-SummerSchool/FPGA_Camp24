@@ -54,6 +54,8 @@ If you have a [PYNQ Supported Board](https://www.pynq.io/boards.html) at hand, p
 
 **Lab2 Advanced Version:** Use the AXI bus or AXIS bus to achieve functional verification of any RTL IP under the PYNQ framework.
 
+**Lab3 Homework** Choose an arbitrary HLS design and optimize it according to design rules. Compare the results before and after optimization, and briefly explain the reasons for the changes.
+
 ## Additional Material
 
 1. [High Level Synthesis Material](https://xilinx.github.io/xup_high_level_synthesis_design_flow/pbl.html)

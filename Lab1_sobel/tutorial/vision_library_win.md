@@ -10,6 +10,11 @@ OS: Windows 10 (22H2)
 Version: Vitis 2023.2
 Device: xc7z020-clg484-1
 Required Install: OpenCV 4.4.0 (see [Install/Setup OpenCV on Windows 10](https://support.xilinx.com/s/article/000035890) for instructions)
+Set up the environment variable to reference the OpenCV installation
+
+1. OpenCV inclulde directory : C:/Data/OpenCV/build_win64/install/include
+2. OpenCV library directory : C:/Data/OpenCV/build_win64/install/x64/mingw/lib
+3. Vitis Vision Directory : C:/Data/Vitis_Libraries/Vitis_Libraries-master/vision/
 
 ## Running a Vitis Vision Library Example with Vitis HLS
 
