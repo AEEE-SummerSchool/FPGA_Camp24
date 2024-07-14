@@ -26,10 +26,14 @@ To utilize the examples designs, or reference the OpenCV libraries in a user tes
 
 1. Install the OpenCV tools version 4.4.0
 2. Set up the environment variable to reference the OpenCV installation
-
-   1. OpenCV inclulde directory : C:/Data/OpenCV/build_win64/install/include
-   2. OpenCV library directory : C:/Data/OpenCV/build_win64/install/x64/mingw/lib
-   3. Vitis Vision Directory : C:/Data/Vitis_Libraries/Vitis_Libraries-master/vision/
+   User variables:
+   1. OPENCV_INCLUDE: C:/Data/OpenCV/build_win64/install/include
+   2. OPENCV_LIB: C:/Data/OpenCV/build_win64/install/x64/mingw/lib
+   3. LD_LIBRARY_PATH: C:/Data/OpenCV/build_win64/install/x64/mingw/lib
+   Path:
+   1. C:/Data/Xilinx/Vitis_HLS/2023.1/bin
+   Then restart the computer.
+   Note: The library paths need to be modified according to youre actual situation. The paths mentioned above are not applicable to everyone. 
 3. Create a Tcl script for Vitis HLS execution which references the OpenCV libraries
 
 To run the Vitis HLS script, perform the following actions:
