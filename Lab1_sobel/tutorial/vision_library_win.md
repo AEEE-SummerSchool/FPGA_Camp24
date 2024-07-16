@@ -7,7 +7,9 @@ This blog will run through creating an HLS component that utilizes the Vitis Vis
 This was tested on:
 
 OS: Windows 10/11 (22H2)
+
 Version: Vitis 2023.2
+
 Device: xc7z020-clg484-1
 
 ## Environment Setup
@@ -41,9 +43,9 @@ To utilize the examples designs, or reference the OpenCV libraries in a user tes
 2. Set up the environment variable to reference the OpenCV installation
 
 ```
-   1. OpenCV inclulde directory : C:/{Path to OpenCV}/OpenCV/build_win64/install/include
-   2. OpenCV library directory : C:/{Path to OpenCV}/OpenCV/build_win64/install/x64/mingw/lib
-   3. Vitis Vision Directory : C:/{Path to Vitis_Lib}/Vitis_Libraries/Vitis_Libraries-master/vision/
+   1. OpenCV inclulde directory : {Path to OpenCV}/OpenCV/build_win64/install/include
+   2. OpenCV library directory : {Path to OpenCV}/OpenCV/build_win64/install/x64/mingw/lib
+   3. Vitis Vision Directory : {Path to Vitis_Lib}/Vitis_Libraries/Vitis_Libraries-master/vision/
 ```
 
 To run the Vitis HLS script, perform the following actions:
@@ -53,7 +55,7 @@ To run the Vitis HLS script, perform the following actions:
 3) Run the following command:
 
 ```
-vitis_hls -f run_hls_standalone.tcl
+vitis_hls -f run_standalone_win.tcl
 
 ```
 

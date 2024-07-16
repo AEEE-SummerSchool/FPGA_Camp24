@@ -194,7 +194,8 @@ For more information, refer to [Compiling and Installing OpenCV libraries for us
 ### Build the HLS Kernel Project
 
 ```
-Vitis_HLS -f run_standalone.tcl
+cd $LAB_WORK_DIR/sobel/prj/vision_lib/kernel
+Vitis_HLS -f run_standalone_linux.tcl
 ```
 
 ---
