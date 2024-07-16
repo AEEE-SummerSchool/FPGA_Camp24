@@ -21,6 +21,8 @@ If you have a [PYNQ Supported Board](https://www.pynq.io/boards.html) at hand, p
 
 [Project-Based Learning Material Lab](./pbl.md) Steps
 
+[Remote Lab](./Remote_Lab.md) Usage
+
 ## Agenda
 
 | DATE               | Time             | Subject                                                                          | Resource                                                                                               |
@@ -55,6 +57,13 @@ If you have a [PYNQ Supported Board](https://www.pynq.io/boards.html) at hand, p
 **Lab2 Advanced Version:** Use the AXI bus or AXIS bus to achieve functional verification of any RTL IP under the PYNQ framework.
 
 **Lab3 Homework** Choose an arbitrary HLS design and optimize it according to design rules. Compare the results before and after optimization, and briefly explain the reasons for the changes.
+
+## Submission
+
+* Deadline: 18th July
+* Submission format:
+  * Github or Gitee repository with project souce code，Please submit using the same directory structure as the experimentPlease use the same project hiher
+* E-mail Notification: aeee-sc@qq.com
 
 ## Additional Material
 

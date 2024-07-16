@@ -1,4 +1,4 @@
-# Create and Run a Vitis Vision Library Example on Windows 10
+# Create and Run a Vitis Vision Library Example on Windows
 
 This blog will run through creating an HLS component that utilizes the Vitis Vision Library. This uses the Vitis Unified IDE. Most steps are the same if you are using Vitis Classic.
 
@@ -6,17 +6,30 @@ This blog will run through creating an HLS component that utilizes the Vitis Vis
 
 This was tested on:
 
-OS: Windows 10 (22H2)
+OS: Windows 10/11 (22H2)
 Version: Vitis 2023.2
 Device: xc7z020-clg484-1
-Required Install: OpenCV 4.4.0 (see [Install/Setup OpenCV on Windows 10](https://support.xilinx.com/s/article/000035890) for instructions)
-Set up the environment variable to reference the OpenCV installation
 
-1. OpenCV inclulde directory : C:/Data/OpenCV/build_win64/install/include
-2. OpenCV library directory : C:/Data/OpenCV/build_win64/install/x64/mingw/lib
-3. Vitis Vision Directory : C:/Data/Vitis_Libraries/Vitis_Libraries-master/vision/
+## Environment Setup
+
+### 1. OpenCV 4.4.0 Installation
+
+**Option 1**: Follow the instruction to build the  [Install/Setup OpenCV on Windows 10](https://support.xilinx.com/s/article/000035890) loaclly on your own
+
+**Option 2**: Download and unzip the pre-built package (MinGW 64bit version of OpenCV compiled on Windows) from Baidu cloud :
+
+* Link：[https://pan.baidu.com/s/1-BbCsrGdloeHZ0zBFsY2Nw](https://pan.baidu.com/s/1-BbCsrGdloeHZ0zBFsY2Nw)
+* Password：3dxa
+
+### 2. Set up the environment variable to reference the OpenCV installation
+
+1. OpenCV inclulde directory : `C:/{Path to OpenCV}/OpenCV/build_win64/install/include`
+2. OpenCV library directory : `C:/{Path to OpenCV}/OpenCV/build_win64/install/x64/mingw/lib`
+3. Vitis Vision Directory : `C:/{Path to Vitis Library}/Vitis_Libraries/Vitis_Libraries-master/vision/`
 
 ## Running a Vitis Vision Library Example with Vitis HLS
+
+There are two methods to create and execute the Sobel kernel project: the TCL flow and the GUI flow. Please choose the one you prefer.
 
 ### 1. Using Tcl Flow for Execution
 
@@ -27,18 +40,22 @@ To utilize the examples designs, or reference the OpenCV libraries in a user tes
 1. Install the OpenCV tools version 4.4.0
 2. Set up the environment variable to reference the OpenCV installation
 
-   1. OpenCV inclulde directory : C:/Data/OpenCV/build_win64/install/include
-   2. OpenCV library directory : C:/Data/OpenCV/build_win64/install/x64/mingw/lib
-   3. Vitis Vision Directory : C:/Data/Vitis_Libraries/Vitis_Libraries-master/vision/
-3. Create a Tcl script for Vitis HLS execution which references the OpenCV libraries
+```
+   1. OpenCV inclulde directory : C:/{Path to OpenCV}/OpenCV/build_win64/install/include
+   2. OpenCV library directory : C:/{Path to OpenCV}/OpenCV/build_win64/install/x64/mingw/lib
+   3. Vitis Vision Directory : C:/{Path to Vitis_Lib}/Vitis_Libraries/Vitis_Libraries-master/vision/
+```
 
 To run the Vitis HLS script, perform the following actions:
 
-1) Place the  [run_hls_standalone.tcl](../prj/vision_lib/kernel/run_hls_standalone.tcl) script in the <Vitis_library_path>/vision/L1/example/sobelfilter directory.
-2) Open the Vitis HLS command line shell and navigate to the <itis_library_path>/vision/L1/example/sobelfilter directory
+1) Place the  [run_standalone_win.tcl](../prj/vision_lib/kernel/run_standalone_win.tcl) script in the `<Path to Vitis library>/vision/L1/example/sobelfilter` directory.
+2) Open the Vitis HLS command line shell and navigate to the `<Path to Vitis library>/vision/L1/example/sobelfilter` directory
 3) Run the following command:
 
+```
 vitis_hls -f run_hls_standalone.tcl
+
+```
 
 ---
 

@@ -60,10 +60,11 @@ The advantages and disadvantages of the two methods are as follows:
 
 1. **Installation Steps** :
 
-   * Detailed instructions for installing the Vitis Vision Library are provided in the accompanying [documentation](https://github.com/Xilinx/xup_high_level_synthesis_design_flow/blob/main/source/sobel/tutorial/vision_library_guide.md).
+   * Detailed instructions for installing the Vitis Vision Library.
+     * If you are using Windows system, please refer to this [guide](./tutorial/vision_library_win.md).
+     * If you are using Linux system, please refer to this [guide](./tutorial/vision_library_linux.md).
    * Ensure all dependencies and environment settings are configured correctly.
    * Follow the configuration steps to set up the library within your development environment.
-   * Verify the installation by running [run_standalone.tcl](https://github.com/Xilinx/xup_high_level_synthesis_design_flow/blob/main/source/sobel/tutorial/run_standalone.tcl) file.
 2. **Deployment Steps** :
 
    * Follow the Sobel GUI flow [tutorial](https://github.com/Xilinx/xup_high_level_synthesis_design_flow/blob/main/source/sobel/tutorial/sobel_gui_flow.md) or the tcl file to generate the PYNQ overlay.
