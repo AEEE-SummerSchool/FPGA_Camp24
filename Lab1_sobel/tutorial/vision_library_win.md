@@ -25,9 +25,9 @@ Device: xc7z020-clg484-1
 
 ### 2. Set up the environment variable to reference the OpenCV installation
 
-1. OpenCV inclulde directory : `C:/{Path to OpenCV}/OpenCV/build_win64/install/include`
-2. OpenCV library directory : `C:/{Path to OpenCV}/OpenCV/build_win64/install/x64/mingw/lib`
-3. Vitis Vision Directory : `C:/{Path to Vitis Library}/Vitis_Libraries/Vitis_Libraries-master/vision/`
+1. OpenCV inclulde directory : `{Path to OpenCV}/OpenCV/build_win64/install/include`
+2. OpenCV library directory : `{Path to OpenCV}/OpenCV/build_win64/install/x64/mingw/lib`
+3. Vitis Vision Directory : `{Path to Vitis Library}/Vitis_Libraries/Vitis_Libraries-master/vision/`
 
 ## Running a Vitis Vision Library Example with Vitis HLS
 
